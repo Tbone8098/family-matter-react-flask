@@ -1,0 +1,169 @@
+:root {
+    --color-darker-blue: #293241;
+    --color-dark-blue: #3D5A80;
+    --color-light-blue: #98C1D9;
+    --color-orange: #EE6C4D;
+}
+
+
+/* ********************************************************************************* */
+/* *********************************** Utilities *********************************** */
+/* ********************************************************************************* */
+
+/* MISC */
+
+.clickable {
+    cursor: pointer;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+/* Menus */
+.ul-row-menu {
+    display: flex;
+    gap: 1em;
+    list-style-type: none;
+}
+/* positions */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+/* buttons */
+.btn:hover{
+    background-color: var(--color-orange);
+    color: var(--color-darker-blue);
+}
+.btn-darker {
+    background-color: var(--color-darker-blue);
+}
+.btn-dark {
+    background-color: var(--color-dark-blue);
+}
+.btn-light {
+    background-color: var(--color-light-blue);
+}
+.btn-orange {
+    background-color: var(--color-orange);
+}
+
+/* Modals */
+
+.my-modal-wrapper {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: rgba(0, 0, 0, 0.452);
+}
+
+.my-modal {
+    position: relative;
+    top: 0;
+    min-width: 50vw;
+    max-height: 90vh;
+
+    padding: 1em;
+    margin: 1em;
+    
+    background-color: white;
+    border-radius: 1em;
+
+    overflow: auto;
+}
+
+.my-modal-header {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 0.5em 1em 0.5em;
+}
+
+/* Colors */
+.bg-darker {
+    background-color: var(--color-darker-blue);
+}
+.bg-dark {
+    background-color: var(--color-dark-blue);
+}
+.bg-light {
+    background-color: var(--color-light-blue);
+}
+.bg-orange {
+    background-color: var(--color-orange);
+}
+.bg-white {
+    background-color: white;
+}
+.bg-black {
+    background-color: black;
+}
+.txt-darker {
+    color: var(--color-darker-blue);
+}
+.txt-dark {
+    color: var(--color-dark-blue);
+}
+.txt-light {
+    color: var(--color-light-blue);
+}
+.txt-orange {
+    color: var(--color-orange);
+}
+.txt-white {
+    color: white;
+}
+.txt-black {
+    color: black;
+}
+.txt-dark-gray {
+    color: rgb(92, 92, 92);
+}
+/* hover */
+.txt-hover-darker:hover {
+    color: var(--color-darker-blue);
+}
+.txt-hover-dark:hover {
+    color: var(--color-dark-blue);
+}
+.txt-hover-light:hover {
+    color: var(--color-light-blue);
+}
+.txt-hover-orange:hover {
+    color: var(--color-orange);
+}
+.txt-hover-white:hover {
+    color: white;
+}
+.txt-hover-black:hover {
+    color: black;
+}
+.bg-hover-darker:hover {
+    background-color: var(--color-darker-blue);
+}
+.bg-hover-dark:hover {
+    background-color: var(--color-dark-blue);
+}
+.bg-hover-light:hover {
+    background-color: var(--color-light-blue);
+}
+.bg-hover-orange:hover {
+    background-color: var(--color-orange);
+}
+.bg-hover-white:hover {
+    background-color: white;
+}
+.bg-hover-black:hover {
+    background-color: black;
+}
