@@ -1,0 +1,66 @@
+@font-face {
+    font-family: league-spartan;
+    font-weight: 700;
+    src: url("../../../fonts/league-spartan.bold.ttf");
+}
+
+@font-face {
+    font-family: glacial-indifference;
+    font-weight: 400;
+    src: url("../../../fonts/Glacial-Indifference.otf");
+}
+
+@font-face {
+    font-family: northwell;
+    font-weight: 400;
+    src: url("../../../fonts/northwell.ttf");
+}
+
+h1 {
+    font-family: league-spartan;
+}
+
+h2 {
+    padding-top: 0.5em;
+    font-family: northwell;
+    font-size: 2.5rem;
+}
+
+body {
+    font-family: glacial-indifference;
+    font-size: 1.3rem;
+}
+
+.font-league {
+    font-family: league-spartan;
+}
+
+.font-northwell {
+    font-family: northwell;
+}
+
+.font-glacial {
+    font-family: glacial-indifference;
+}
+
+/* text */
+.txt-yellow {
+    color: yellow;
+}
+.txt-blue {
+    color: #4D76D1;
+}
+.txt-orange {
+    color: orange;
+}
+
+/* background */
+.bg-blue {
+    background-color: #4D76D1;
+}
+.bg-yellow {
+    background-color: yellow;
+}
+.bg-orange {
+    background-color: orange;
+}

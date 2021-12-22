@@ -48,9 +48,9 @@ export default function Index() {
     return (
         <div>
             {modal['comingSoon'] === true ? comingSoon() : ''}
-            <div className="header d-flex align-items-center justify-content-center bg-darker py-3 gap-3 sticky-top">
-                <img src={Logo} alt="adventure awaits logo" width="100px" />
-                <h1 className="txt-white">The Adventure Awaits</h1>
+            <div className="header d-flex align-items-center justify-content-center bg-darker py-3 gap-3">
+                <img src={Logo} alt="adventure awaits logo" width="75px" />
+                <h1 className="txt-orange">The Adventure Awaits</h1>
             </div>
             <div className="container">
                 <div className="row d-flex justify-content-center">
