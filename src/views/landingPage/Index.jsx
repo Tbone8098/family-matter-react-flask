@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 
 // images
 import Logo from '../../images/logos/logo_no_url_white.png'
-import KendalREFIT from '../../images/refitOnTheRoad/kendal_refit.png'
+import KendalREFIT from '../../images/refitOnTheRoad/kendal_refit.jpg'
 import Sunrise from '../../images/adventureAwaits/sunrise_1.png'
 import OR from '../../images/adventureAwaits/or.png'
 import ORLogic from '../../images/adventureAwaits/or_logic_gate.png'
@@ -63,7 +63,7 @@ export default function Index() {
                         </div>
                         <div className="row d-flex align-items-center" id="section1">
                             <div className="col-sm-6 d-flex justify-content-end">
-                                <img src={KendalREFIT} alt="kendal refit" className="w-100" />
+                                <img src={KendalREFIT} alt="kendal refit" className="w-100 border border-2 border-dark" />
                             </div>
                             <div className="col-sm-6">
                                 <h2>REFIT on the Road</h2>
@@ -78,7 +78,7 @@ export default function Index() {
                         </div>
                         <div className="row d-flex flex-sm-row-reverse">
                             <div className="col-sm-6">
-                                <img src={Sunrise} alt="Sunrise" className="w-100" />
+                                <img src={Sunrise} alt="Sunrise" className="w-100 border border-2 border-dark" />
                             </div>
                             <div className="col-sm-6">
                                 <h2>Life on the Road</h2>
