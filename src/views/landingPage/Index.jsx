@@ -61,6 +61,7 @@ export default function Index() {
                             <div className="d-flex justify-content-center gap-3 my-3">
                                 <span className="txt-orange txt-hover-dark clickable underlined" onClick={() => toggleModal('comingSoon')} >Life on the Road</span >
                                 <Link className="txt-orange txt-hover-dark" to="/refit-on-the-road">REFIT on the Road</Link>
+                                <Link className="txt-orange txt-hover-dark" to="/webworkx">WebWorkx</Link>
                             </div>
                         </div>
                         <div className="row d-flex align-items-center" id="section1">
