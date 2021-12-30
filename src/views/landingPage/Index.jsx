@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 
 
+
 // images
 import Logo from '../../images/logos/logo_no_url_white.png'
 import KendalREFIT from '../../images/refitOnTheRoad/kendal_refit.jpg'
@@ -14,6 +15,7 @@ import Footer from '../../components/footer/Index'
 
 
 export default function Index() {
+    // const [count, setCount] = useState(0)
     const [modal, setModal] = useState({
         comingSoon: false
     })
@@ -73,7 +75,7 @@ export default function Index() {
                         </div>
                         <div className="row my-3">
                             <div className="col-sm-12 d-flex justify-content-center">
-                                <img src={orImg == true ? OR : ORLogic} alt="or image" width='100px' onMouseEnter={toggleOr} onMouseLeave={toggleOr} />
+                                <img src={orImg === true ? OR : ORLogic} alt="or image" width='100px' onMouseEnter={toggleOr} onMouseLeave={toggleOr} />
                             </div>
                         </div>
                         <div className="row d-flex flex-sm-row-reverse">

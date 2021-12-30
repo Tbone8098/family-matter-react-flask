@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import underline from '../../../components/helperFunc/utilities'
 
 import { Link } from 'react-router-dom'
 import './style.css'
@@ -23,6 +24,8 @@ import Footer from '../../../components/footer/Index'
 
 export default function Index() {
     const [myModal, setMyModal] = useState(null)
+    const [classInfo, setClassInfo] = useState('refitSchedule')
+
 
     function contactMe() {
         return (
@@ -82,6 +85,140 @@ export default function Index() {
         )
     }
 
+    const refitSchedule = () => {
+        return (
+            <div className="d-flex justify-content-center">
+                    <div className="col-sm-6">
+                        <table className='table border border-3 border-dark'>
+                            <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th>Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr className='bg-yellow'>
+                                    <td>Monday</td>
+                                    <td>4:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr className='bg-yellow'>
+                                    <td>Wednesday</td>
+                                    <td>4:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday</td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday</td>
+                                    <td>None</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+        )
+    }
+
+    const refitPlaylist = () => {
+        return (
+            <div className='d-flex justify-content-center'>
+                <div className="col-sm-6">
+                    <table className="table">
+                        <thead>
+                            <tr>
+                                <td>Song Number</td>
+                                <td>Song Name</td>
+                                <td>Artist</td>
+                                <td>Links</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>New Day</td>
+                                <td>Danny Gokey</td>
+                                <td><a href="https://www.youtube.com/watch?v=Nq-dGkxNaHA" target="_blank">YouTube</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Backseat Driver</td>
+                                <td>TobyMac, Hollyn, Tru</td>
+                                <td><a href="https://www.youtube.com/watch?v=ABojuncq-eE" target="_blank">YouTube</a></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Better When I'm Dancing</td>
+                                <td>Meghan Trainor</td>
+                                <td><a href="https://www.youtube.com/watch?v=1gNI4Vt3e-g" target="_blank">YouTube</a></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Today Tomorrow & Forever</td>
+                                <td>Sanctus Real</td>
+                                <td><a href="https://www.youtube.com/watch?v=Nq-dGkxNaHA" target="_blank">YouTube - end</a></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Unfinished</td>
+                                <td>Mandisa</td>
+                                <td><a href="https://www.youtube.com/watch?v=Nq-dGkxNaHA" target="_blank">YouTube</a></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Be a Light</td>
+                                <td>Thomas Rhett & Friends</td>
+                                <td><a href="https://www.youtube.com/watch?v=Nq-dGkxNaHA" target="_blank">YouTube</a></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Flashlight</td>
+                                <td>Hailee Steinfeld</td>
+                                <td><a href="https://www.youtube.com/watch?v=Nq-dGkxNaHA" target="_blank">YouTube</a></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Lights Shine Bright</td>
+                                <td>TobyMac, Hollyn</td>
+                                <td><a href="https://www.youtube.com/watch?v=Nq-dGkxNaHA" target="_blank">YouTube</a></td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>God Only Knows</td>
+                                <td>For King & Country</td>
+                                <td><a href="https://www.youtube.com/watch?v=Nq-dGkxNaHA" target="_blank">YouTube</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        )
+    }
+
+    const classInfoHandler = (e) => {
+        let el = e.target
+        setClassInfo(el.id)
+        underline(el)
+    }
+
+
+    const ClassInfoObj = {
+        refitPlaylist: refitPlaylist,
+        refitSchedule: refitSchedule
+    }
+
     return (
         <div>
             <div className="container-fluid">
@@ -134,49 +271,19 @@ export default function Index() {
                     <h2 className='text-center txt-white font-glacial p-0'>Kendal's Class</h2>
                 </div>
                 <div className="row" id='schedule'>
-                    <h2 className='text-center'>Schedule</h2>
-                </div>
-                <div className="row d-flex justify-content-center">
-                    <div className="col-sm-6">
-                        <table className='table border border-3 border-dark'>
-                            <thead>
-                                <tr>
-                                    <th>Day</th>
-                                    <th>Time</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr className='bg-yellow'>
-                                    <td>Monday</td>
-                                    <td>4:00 PM</td>
-                                </tr>
-                                <tr>
-                                    <td>Tuesday</td>
-                                    <td>None</td>
-                                </tr>
-                                <tr className='bg-yellow'>
-                                    <td>Wednesday</td>
-                                    <td>4:00 PM</td>
-                                </tr>
-                                <tr>
-                                    <td>Thursday</td>
-                                    <td>None</td>
-                                </tr>
-                                <tr>
-                                    <td>Friday</td>
-                                    <td>None</td>
-                                </tr>
-                                <tr>
-                                    <td>Saturday</td>
-                                    <td>None</td>
-                                </tr>
-                                <tr>
-                                    <td>Sunday</td>
-                                    <td>None</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div className="d-flex justify-content-evenly">
+                    <h2 className='underlined clickable' id='refitSchedule' onClick={(e) => classInfoHandler(e)}>Schedule</h2>
+                    <h2 className='clickable' id='refitPlaylist' onClick={(e) => classInfoHandler(e)}>Playlist</h2>
                     </div>
+                </div>
+                <div className="row">
+                    {
+                        ClassInfoObj !== null
+                        ?
+                        ClassInfoObj[classInfo]()
+                        :
+                        'loading...'
+                    }
                 </div>
                 <div className="row" id='location'>
                     <h2 className='text-center'>Class Locations</h2>
