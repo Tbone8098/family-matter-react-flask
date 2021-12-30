@@ -4,7 +4,7 @@ import React, {useState} from 'react'
 
 // images
 import Logo from '../../images/logos/logo_no_url_white.png'
-import KendalREFIT from '../../images/refitOnTheRoad/kendal_refit.jpg'
+import KendalREFIT from '../../images/refitOnTheRoad/kendal_refit.png'
 import Sunrise from '../../images/adventureAwaits/sunrise_1.png'
 import OR from '../../images/adventureAwaits/or.png'
 import ORLogic from '../../images/adventureAwaits/or_logic_gate.png'

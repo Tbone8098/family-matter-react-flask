@@ -10,6 +10,20 @@
 /* *********************************** Utilities *********************************** */
 /* ********************************************************************************* */
 
+/* Font */
+.f1 {
+    font-size: 3.052rem;
+}
+.f2 {
+    font-size: 1.953rem;
+}
+.f3 {
+    font-size: 1.25rem;
+}
+.f4 {
+    font-size: 1rem;
+}
+
 /* MISC */
 
 .clickable {
@@ -50,6 +64,9 @@
 }
 .btn-orange {
     background-color: var(--color-orange);
+}
+.btn-black {
+    background-color: black;
 }
 
 /* Modals */

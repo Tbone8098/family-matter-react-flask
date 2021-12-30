@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import underline from '../../../components/helperFunc/utilities'
+import toggleClasses from '../../../components/helperFunc/utilities'
 
 import { Link } from 'react-router-dom'
 import './style.css'
@@ -11,7 +11,7 @@ import Logo from '../../../images/logos/logo_url_white.png'
 import REFITLogo from '../../../images/refitOnTheRoad/refit_icon.svg'
 import RefitImg1 from '../../../images/refitOnTheRoad/refit_img_1.png'
 import RefitImg2 from '../../../images/refitOnTheRoad/refit_img_2.png'
-import KendalRefit from '../../../images/refitOnTheRoad/kendal_refit.jpg'
+import KendalRefit from '../../../images/refitOnTheRoad/kendal_refit.png'
 import RefitZoom from '../../../images/refitOnTheRoad/refit_zoom.png'
 import ProfilePic from '../../../images/refitOnTheRoad/profile_pic.png'
 import RefitDisco from '../../../images/refitOnTheRoad/refit_disco.png'
@@ -33,7 +33,7 @@ export default function Index() {
                 <div className="my-modal">
                     <div className="my-modal-header">
                         <h2>Contact Me</h2>
-                        <span onClick={() => setMyModal(null)}> <img src={Close} alt="close btn"  width="50px" /> </span>
+                        <span onClick={() => setMyModal(null)}> <img src={Close} alt="close btn" width="50px" /> </span>
                     </div>
                     <div className="my-modal-content">
                         <p><strong>Email: </strong>thibault.kendal@protonmail.com</p>
@@ -59,23 +59,23 @@ export default function Index() {
                         <div className="row">
                             <div className="col-sm-4 d-flex justify-content-center">
                                 <div>
-                                <p className='text-center'>PayPal</p>
-                                <p className='text-center'>@kendaltbo</p>
-                                <img src={DonatePayPal} alt="" width="200px"  />
+                                    <p className='text-center'>PayPal</p>
+                                    <p className='text-center'>@kendaltbo</p>
+                                    <img src={DonatePayPal} alt="" width="200px" />
                                 </div>
                             </div>
                             <div className="col-sm-4 d-flex justify-content-center">
                                 <div>
                                     <p className='text-center'>Venmo</p>
                                     <p className='text-center'>@KendalThibault</p>
-                                    <img src={DonateVenmo} alt="" width="200px"  />
+                                    <img src={DonateVenmo} alt="" width="200px" />
                                 </div>
                             </div>
                             <div className="col-sm-4 d-flex d-sm-block justify-content-center">
                                 <div className='flex-col flex-column-reverse'>
                                     <p className='text-center'>Store coming soon!</p>
                                     <p className='text-center'></p>
-                                    <img src={Logo} alt="" width="300px"  />
+                                    <img src={Logo} alt="" width="300px" />
                                 </div>
                             </div>
                         </div>
@@ -88,47 +88,47 @@ export default function Index() {
     const refitSchedule = () => {
         return (
             <div className="d-flex justify-content-center">
-                    <div className="col-sm-6">
-                        <table className='table border border-3 border-dark'>
-                            <thead>
-                                <tr>
-                                    <th>Day</th>
-                                    <th>Time</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr className='bg-yellow'>
-                                    <td>Monday</td>
-                                    <td>4:00 PM</td>
-                                </tr>
-                                <tr>
-                                    <td>Tuesday</td>
-                                    <td>None</td>
-                                </tr>
-                                <tr className='bg-yellow'>
-                                    <td>Wednesday</td>
-                                    <td>4:00 PM</td>
-                                </tr>
-                                <tr>
-                                    <td>Thursday</td>
-                                    <td>None</td>
-                                </tr>
-                                <tr>
-                                    <td>Friday</td>
-                                    <td>None</td>
-                                </tr>
-                                <tr>
-                                    <td>Saturday</td>
-                                    <td>None</td>
-                                </tr>
-                                <tr>
-                                    <td>Sunday</td>
-                                    <td>None</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <div className="col-sm-6">
+                    <table className='table border border-3 border-dark'>
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr className='bg-yellow'>
+                                <td>Monday</td>
+                                <td>4:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>None</td>
+                            </tr>
+                            <tr className='bg-yellow'>
+                                <td>Wednesday</td>
+                                <td>4:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>None</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
+            </div>
         )
     }
 
@@ -136,10 +136,11 @@ export default function Index() {
         return (
             <div className='d-flex justify-content-center'>
                 <div className="col-sm-6">
+                    <p className='text-center'>To go to my Spotify Playlist click <a href="https://open.spotify.com/playlist/2r1pAoINXq0k7E7hta6utd?si=nq96AWigSC6YJhWdRbc6mg&utm_source=native-share-menu" target="_blank">Here</a></p>
                     <table className="table">
                         <thead>
                             <tr>
-                                <td>Song Number</td>
+                                <td></td>
                                 <td>Song Name</td>
                                 <td>Artist</td>
                                 <td>Links</td>
@@ -168,40 +169,44 @@ export default function Index() {
                                 <td>4</td>
                                 <td>Today Tomorrow & Forever</td>
                                 <td>Sanctus Real</td>
-                                <td><a href="https://www.youtube.com/watch?v=Nq-dGkxNaHA" target="_blank">YouTube - end</a></td>
+                                <td>Coming Soon!</td>
+                                {/* <td><a href="#" target="_blank">YouTube - end</a></td> */}
                             </tr>
                             <tr>
                                 <td>5</td>
                                 <td>Unfinished</td>
                                 <td>Mandisa</td>
-                                <td><a href="https://www.youtube.com/watch?v=Nq-dGkxNaHA" target="_blank">YouTube</a></td>
+                                <td><a href="https://www.youtube.com/watch?v=7ox-FaMEiDk&t=21s" target="_blank">YouTube</a></td>
                             </tr>
                             <tr>
                                 <td>6</td>
                                 <td>Be a Light</td>
                                 <td>Thomas Rhett & Friends</td>
-                                <td><a href="https://www.youtube.com/watch?v=Nq-dGkxNaHA" target="_blank">YouTube</a></td>
+                                <td>Coming Soon!</td>
+                                {/* <td><a href="https://www.youtube.com/watch?v=Nq-dGkxNaHA" target="_blank">YouTube</a></td> */}
                             </tr>
                             <tr>
                                 <td>7</td>
                                 <td>Flashlight</td>
                                 <td>Hailee Steinfeld</td>
-                                <td><a href="https://www.youtube.com/watch?v=Nq-dGkxNaHA" target="_blank">YouTube</a></td>
+                                <td><a href="https://www.youtube.com/watch?v=oqOsJtd04uc" target="_blank">YouTube</a></td>
                             </tr>
                             <tr>
                                 <td>8</td>
                                 <td>Lights Shine Bright</td>
                                 <td>TobyMac, Hollyn</td>
-                                <td><a href="https://www.youtube.com/watch?v=Nq-dGkxNaHA" target="_blank">YouTube</a></td>
+                                <td><a href="https://www.youtube.com/watch?v=aKP6zSaArgU" target="_blank">YouTube</a></td>
                             </tr>
                             <tr>
                                 <td>9</td>
                                 <td>God Only Knows</td>
                                 <td>For King & Country</td>
-                                <td><a href="https://www.youtube.com/watch?v=Nq-dGkxNaHA" target="_blank">YouTube</a></td>
+                                <td>Coming Soon!</td>
+                                {/* <td><a href="https://www.youtube.com/watch?v=Nq-dGkxNaHA" target="_blank">YouTube</a></td> */}
                             </tr>
                         </tbody>
                     </table>
+                    <iframe src="https://open.spotify.com/embed/playlist/2r1pAoINXq0k7E7hta6utd?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                 </div>
             </div>
         )
@@ -210,7 +215,7 @@ export default function Index() {
     const classInfoHandler = (e) => {
         let el = e.target
         setClassInfo(el.id)
-        underline(el)
+        toggleClasses(el, ['refit-btn-active'])
     }
 
 
@@ -270,22 +275,22 @@ export default function Index() {
                 <div className="row bg-blue mt-3 mx-1 mx-sm-0 p-3 shadow">
                     <h2 className='text-center txt-white font-glacial p-0'>Kendal's Class</h2>
                 </div>
-                <div className="row" id='schedule'>
+                <div className="row mt-3" id='schedule'>
                     <div className="d-flex justify-content-evenly">
-                    <h2 className='underlined clickable' id='refitSchedule' onClick={(e) => classInfoHandler(e)}>Schedule</h2>
-                    <h2 className='clickable' id='refitPlaylist' onClick={(e) => classInfoHandler(e)}>Playlist</h2>
+                        <h2 className='refit-btn refit-btn txt-white refit-btn-hover p-3 f2 clickable refit-btn-active' id='refitSchedule' onClick={(e) => classInfoHandler(e)}>Schedule</h2>
+                        <h2 className='clickable refit-btn refit-btn txt-white refit-btn-hover p-3 f2' id='refitPlaylist' onClick={(e) => classInfoHandler(e)}>Playlist</h2>
                     </div>
                 </div>
                 <div className="row">
                     {
                         ClassInfoObj !== null
-                        ?
-                        ClassInfoObj[classInfo]()
-                        :
-                        'loading...'
+                            ?
+                            ClassInfoObj[classInfo]()
+                            :
+                            'loading...'
                     }
                 </div>
-                <div className="row" id='location'>
+                <div className="row mt-4" id='location'>
                     <h2 className='text-center'>Class Locations</h2>
                 </div>
                 <div className="row">

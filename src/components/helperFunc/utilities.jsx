@@ -1,12 +1,16 @@
-export default function underline(element){
+export default function toggleClasses(element, classes = []){
     let parent = element.parentElement
     let children = parent.children
     for (let child of children) {
         console.log(child);
         if (child.id === element.id){
-            element.classList.add('underlined')
+            for (let cls of classes) {
+                element.classList.add(cls)
+            }
         } else {
-            child.classList.remove('underlined')
+            for (let cls of classes) {
+                child.classList.remove(cls)
+            }
         }
     }
 }
