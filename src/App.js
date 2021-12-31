@@ -1,13 +1,12 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+
 import RefitHome from './views/refitOnTheRoad/Home/Index';
 import LandingPage from './views/landingPage/Index'
 import Blog from './views/adventureAwaits/Home/Index'
 import WebWorkx from './views/webworkx/home'
 
 import './App.css';
-import './style/main.css'
-import './style/utilities.css'
 import './js/modal.js'
 
 function App() {

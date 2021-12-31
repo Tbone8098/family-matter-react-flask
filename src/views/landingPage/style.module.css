@@ -1,0 +1,21 @@
+.grid__container {
+    display: grid;
+    grid-template-areas: "header" "nav_one" "main" "footer";
+    grid-template-columns: repeat(auto, 1fr);
+}
+
+.grid__header {
+    grid-area: header;
+}
+
+.grid__nav_one {
+    grid-area: nav_one;
+}
+
+.grid__main {
+    grid-area: main;
+}
+
+.grid__footer {
+    grid-area: footer;
+}

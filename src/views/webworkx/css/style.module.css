@@ -1,0 +1,14 @@
+/* :root {
+    --color-primary-dark: #6B9080;
+    --color-secondary-dark: #A4C3B2;
+    --color-primary-light: #CCE3DE;
+    --color-secondary-light: #EAF4F4;
+    --color-5: #F6FFF8;
+    --color-accent: #FF9E00;
+} */
+
+/************************************ section boxes  */
+.section__box {
+    background-color: var(--color-primary-dark);
+}
+
