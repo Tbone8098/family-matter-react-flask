@@ -169,8 +169,7 @@ export default function Index() {
                                 <td>4</td>
                                 <td>Today Tomorrow & Forever</td>
                                 <td>Sanctus Real</td>
-                                <td>Coming Soon!</td>
-                                {/* <td><a href="#" target="_blank">YouTube - end</a></td> */}
+                                <td><a href="https://youtu.be/ovePO2z3olY" target="_blank">YouTube</a></td>
                             </tr>
                             <tr>
                                 <td>5</td>
