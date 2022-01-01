@@ -50,11 +50,6 @@ export default function Index() {
     return (
         <div>
             {modal['comingSoon'] === true ? comingSoon() : ''}
-            <div className="grid grid-cols-3 ">
-            <p className='text-3xl'>test</p>
-            <p>test</p>
-            <p>test</p>
-            </div>
             <div className="header d-flex align-items-center justify-content-center bg-darker py-3 gap-3">
                 <img src={Logo} alt="adventure awaits logo" width="75px" />
                 <h1 className="txt-orange">The Adventure Awaits</h1>
